@@ -35,7 +35,11 @@
                 for (int y = 1; y <= userNumber; y++)
                 {
                     int value = x * y;
-                    Console.Write("{0}, ", value);
+                    Console.Write(value);
+                    if (y < userNumber)
+                    {
+                        Console.Write(", ");
+                    }
                 }
                 Console.WriteLine();
             }
